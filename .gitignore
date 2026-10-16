@@ -1,0 +1,112 @@
+# ----------------------------------------------------------------------
+# Environment files and secrets
+# ----------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# ----------------------------------------------------------------------
+# Python virtual environments
+# (anchored to the repository root so they never match a folder inside src/)
+# ----------------------------------------------------------------------
+.venv/
+venv/
+/env/
+/ENV/
+
+# ----------------------------------------------------------------------
+# Operating system and temporary files
+# ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.temp/
+tmp/
+temp/
+
+# ----------------------------------------------------------------------
+# Python build artifacts and caches
+# ----------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ----------------------------------------------------------------------
+# Jupyter and editors
+# ----------------------------------------------------------------------
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# ----------------------------------------------------------------------
+# Data, models and outputs (large files, and data that must not be public)
+# Anchored with a leading slash: src/.../data/ and src/.../models/ are code.
+# ----------------------------------------------------------------------
+/data/*
+!/data/README.md
+/models/
+/outputs/
+/checkpoints/
+
+# Model weights and serialized arrays
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.npz
+*.npy
+*.pkl
+*.parquet
+
+# ----------------------------------------------------------------------
+# Experiment tracking
+# ----------------------------------------------------------------------
+mlruns/
+wandb/
+lightning_logs/
+/runs/
+
+# ----------------------------------------------------------------------
+# Execution logs (HPC / terminals)
+# ----------------------------------------------------------------------
+*.err
+*.out
+*.log
+
+# ----------------------------------------------------------------------
+# Safety net: never commit raw photos or videos by accident.
+# Images used in the documentation or the logo are allowed in docs/ and assets/.
+# ----------------------------------------------------------------------
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.bmp
+*.gif
+*.webp
+*.heic
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+!/docs/**
+!/assets/**
+
+# ----------------------------------------------------------------------
+# GPS files: observation sites are never published
+# ----------------------------------------------------------------------
+*.gpx
+*.kml
+*.kmz
