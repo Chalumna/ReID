@@ -8,6 +8,14 @@ Part of the [Chalumna](https://github.com/Chalumna) organisation.
 
 Each coelacanth carries a pattern of white spots on its body that stays stable over many years. This repository explores whether a learned model can match photographs of the same individual, without tagging or touching the animal, and without the manual spot selection that earlier software required.
 
+ 
+<p align="center">
+  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Coelacanth_off_Pumula_on_the_KwaZulu-Natal_South_Coast,_South_Africa,_on_22_November_2019.png" alt="Latimeria chalumnae showing its white body spots" width="600" />
+</p>
+<p align="center">
+  <sub>White spots form individual-specific patterns used for coelacanth re-identification. Photo: <a href="https://commons.wikimedia.org/wiki/File:Coelacanth_off_Pumula_on_the_KwaZulu-Natal_South_Coast,_South_Africa,_on_22_November_2019.png">Bruce A.S. Henderson</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</sub>
+</p>
+
 ## Background
 
 Thornycroft & Booth (2012) tested semi-automatic photo-identification on coelacanths filmed off South Africa. Without operator intervention, the software ranked the correct individual first in 56 to 92% of cases, and fish photographed at a yaw angle above 60° were much harder to identify.
